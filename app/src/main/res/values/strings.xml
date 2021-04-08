@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Evanto</string>
+    <string-array name="location">
+        <item>Adajan</item>
+        <item>Bhatar</item>
+        <item>City Light</item>
+        <item>Nanpura</item>
+        <item>Parvat Patiya</item>
+        <item>Ring Road</item>
+        <item>Vesu</item>
+    </string-array>
+</resources>

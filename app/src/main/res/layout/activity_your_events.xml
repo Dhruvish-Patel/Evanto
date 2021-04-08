@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YourEvents"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:layout_marginTop="-40dp">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/evanto_logo"></ImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Birthday Event"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/data"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marriage Event"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/marriage_data"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Corporate Event"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/seminar_data"/>
+
+
+            <androidx.cardview.widget.CardView
+            android:id="@+id/add_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/add"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_marginTop="-20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Event"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>>
+    </ScrollView>
+</LinearLayout>
